@@ -1,0 +1,513 @@
+/* common css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+p {
+  font-size: 14px;
+}
+
+button {
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* for mobile btn */
+.mobileBtn {
+  position: absolute;
+  top: -55555555px;
+  right: 5px;
+  font-size: 20px;
+  width: 30px;
+  height: 30px;
+  background: #000;
+  color: #fff;
+}
+
+/*top navbar*/
+nav {
+  font-family: fantasy;
+  background-color: #0bb530;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+nav .navLink {
+  font-family: fantasy, sans-serif;
+  margin: 3rem;
+  color: #252222;
+  font-size: 20px;
+  font-weight: 300;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.navLink:hover {
+  color: #fff;
+  border-top: 1px solid #fff;
+}
+
+/*bottom navbar*/
+.nav2 {
+  background-color: #3bb457c7;
+  width: 100%;
+  height: 70px;
+  position: sticky;
+  top: 90px;
+  left: 0;
+  z-index: 100;
+}
+.nav2 .secondNavLinks {
+  width: 100%;
+  max-width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+.nav2 .secondNavLinks .secondNavLink {
+  text-decoration: none;
+  color: #252222;
+  font-size: 25px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.nav2 .secondNavLinks .secondNavLink:hover {
+  color: #fff;
+}
+
+/*Banner area css here*/
+#banner {
+  width: 100%;
+  height: 100vh;
+  background: url("../public//img/banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+#banner h1 {
+  font-size: 4rem;
+  color: rgb(255, 255, 16);
+  padding: 8rem 0;
+}
+#banner .bannerdivrow {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 90%;
+  margin: 0 auto;
+}
+#banner .bannerdivrow .bannerdivcol {
+  width: 15rem;
+  padding: 2rem 0;
+  background: #84bc83;
+  border-radius: 10px;
+  color: #fff;
+}
+#banner .bannerdivrow .bannerdivcol i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 30px;
+  font-size: 45px;
+}
+#banner .bannerdivrow .bannerdivcol h3 {
+  text-align: center;
+}
+
+/* cart page css here */
+.cart {
+  width: 100%;
+  padding: 3rem 1rem;
+  display: flex;
+}
+.cart .leftDiv {
+  width: 55%;
+  margin-right: 0.5rem;
+}
+.cart .leftDiv .ldiv1 {
+  width: 96%;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.cart .leftDiv .ldiv1 h3 {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.cart .leftDiv .ldiv1 div {
+  display: flex;
+  justify-content: space-between;
+}
+.cart .leftDiv .ldiv1 div div label {
+  margin: auto 0 auto 10px;
+}
+.cart .leftDiv .ldiv1 div .delBtn {
+  padding: 4px 8px;
+  border: 0;
+  background: #e7e5e5fb;
+}
+.cart .leftDiv .ldiv1 div .delBtn i {
+  font-size: 15px;
+}
+.cart .leftDiv .ldiv1 div .shopMoreBtn {
+  padding: 8px 16px;
+  text-transform: uppercase;
+  border: 0;
+  text-decoration: none;
+  background: #ccc;
+  color: #000;
+}
+.cart .leftDiv .ldiv1 div .shopMoreBtn:hover {
+  background: #66c47c;
+}
+.cart .cartProducts {
+  width: 96%;
+  padding: 2rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.cart .cartProducts img {
+  width: 250px;
+  height: 150px;
+}
+.cart .cartProducts div h4 {
+  margin-bottom: 9px;
+}
+.cart .cartProducts div span {
+  color: #ff0000;
+}
+.cart .cartProducts button {
+  border: 0;
+}
+.cart .cartProducts button i {
+  font-size: 16px;
+}
+.cart .cartProducts .quantity {
+  display: flex;
+}
+.cart .cartProducts .delBtn {
+  padding: 4px 8px;
+  background-color: #66c47c;
+  margin: 0 0 1rem 1.5rem;
+  border-radius: 5px;
+}
+.cart .cartProducts .quantity button {
+  padding: 6px;
+  border-radius: 5px;
+}
+.cart .cartProducts .quantity button:hover {
+  background: #66c47c;
+}
+.cart .cartProducts .quantity h5 {
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  margin: 0 8px;
+}
+.rightDiv {
+  width: 45%;
+  height: 24rem;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.rightDiv .rightDiv1 h3 {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 2rem;
+}
+.rightDiv .rightDiv1 div {
+  display: flex;
+  justify-content: space-between;
+}
+.rightDiv .rightDiv1 div p {
+  margin: 0.5rem 0;
+  font-size: 18px;
+}
+.rightDiv .rightDiv1 button {
+  width: 100%;
+  text-align: center;
+  padding: 0.7rem 0;
+  border: 0;
+  text-transform: uppercase;
+}
+.rightDiv .rightDiv1 button:hover {
+  background: #66c47c;
+}
+.rightDiv2 h3 {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.4rem;
+  margin: 2rem 0 1rem 0;
+}
+.rightDiv2 .pay_icons {
+  text-align: center;
+}
+.rightDiv2 .pay_icons i {
+  margin-left: 2rem;
+  font-size: 3rem;
+}
+.rightDiv2 .pay_icons i:first-child {
+  margin-left: 0;
+}
+
+/* product cart css here*/
+.cartGrid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 1rem;
+}
+article {
+  width: 299px;
+  height: auto;
+  /* float: left; */
+  /* margin-bottom: 2rem;
+  margin-right: 1.3rem; */
+  padding: 1rem 1rem;
+  position: relative;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+article .maindiv img {
+  width: 100%;
+  height: 200px;
+  border: 1px solid #000;
+}
+article .childdiv {
+  background: #008000;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 6rem;
+  height: auto;
+  padding: 0.5rem 0;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+}
+article .childdiv h4 {
+  font-size: 14px;
+  padding-bottom: 8px;
+}
+article .childdiv hr {
+  width: 66%;
+  margin-left: 16px;
+  margin-bottom: 8px;
+}
+article .maindiv h3 {
+  margin: 1rem 0;
+}
+article .maindiv p {
+  text-align: justify;
+  margin-bottom: 1rem;
+}
+article .maindiv h5 {
+  font-size: 16px;
+  font-family: "Times New Roman", Times, serif;
+}
+article button {
+  width: 100%;
+  padding: 0.5rem 0;
+  margin-top: 14px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  border: 0;
+}
+article button:hover {
+  background: #39874b;
+}
+
+/*stock part css here*/
+#stock {
+  padding: 80px 4rem;
+  display: flex;
+}
+#stock .leftDiv {
+  margin-right: 5rem;
+}
+#stock .leftDiv .shippingOptionDiv h2,
+#stock .leftDiv .categoriesDiv h2,
+#stock .leftDiv .pricesDiv h2 {
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 20px;
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+#stock .leftDiv .categoriesDiv h2 {
+  margin-top: 0;
+}
+#stock .leftDiv .shippingOptionDiv label,
+#stock .leftDiv .categoriesDiv label,
+#stock .leftDiv .pricesDiv label {
+  margin-left: 8px;
+  font-size: 20px;
+}
+
+#stock .rightDivMain .productSearch {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+#stock .rightDivMain .productSearch .shortBy label {
+  font-size: 1.5rem;
+}
+#stock .rightDivMain .productSearch .shortBy select {
+  padding: 5px 20px;
+  font-size: 1.1rem;
+}
+#stock .rightDivMain .productSearch .searchForm form input {
+  padding: 5px 20px;
+  font-size: 1.1rem;
+}
+
+/* register page css here*/
+.registerMaindiv {
+  width: 100%;
+  height: 63.3vh;
+}
+.registerPage {
+  width: 500px;
+  height: auto;
+  padding: 2rem;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.registerPage h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 0;
+}
+.registerPage form input {
+  width: 100%;
+  font-size: 16px;
+  margin-top: 18px;
+  padding: 6px 0 6px 10px;
+  border: 1px solid #000;
+  outline: none;
+}
+.registerPage form input:last-child {
+  margin-bottom: 0;
+}
+.registerPage form textarea {
+  width: 100%;
+  height: 4rem;
+  padding: 6px;
+  margin-top: 16px;
+  border: 1px solid #000;
+  margin-bottom: 18px;
+}
+.registerPage form button {
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 5px 0;
+  margin-top: 18px;
+}
+.registerPage form button:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* user profile css here */
+.userCartMainDiv {
+  width: 100%;
+  height: 70vh;
+  padding: 2rem 0;
+}
+.userCartMainDiv h1 {
+  text-align: center;
+}
+.userCartMainDiv .userCart {
+  text-align: center;
+  width: 300px;
+  height: auto;
+  padding: 2rem;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  background: hsla(118, 66%, 53%, 0.842);
+}
+.userCartMainDiv .userCart img {
+  width: 100px;
+  height: 90px;
+  border-radius: 50%;
+  background: #fff;
+  margin-bottom: 20px;
+}
+.userCartMainDiv .userCart h4 {
+  margin: 1rem 0;
+}
+.userCartMainDiv .userCart button {
+  padding: 8px;
+  border-radius: 5px;
+  outline: none;
+  border: 0;
+  margin-right: 20px;
+}
+.userCartMainDiv .userCart button:hover {
+  background: #000;
+  color: #fff;
+}
+
+footer {
+  background-color: #0bb530;
+}
+footer .footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  min-height: 80px;
+  color: #fff;
+}
+footer .footerContainer form label,
+footer .footerContainer p {
+  font-size: 20px;
+}
+footer .footerContainer form input[type="email"] {
+  padding: 7px 10px;
+  margin-right: 0;
+  outline: none;
+}
+footer .footerContainer form button {
+  padding: 7px 10px;
+  margin-left: -5px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  cursor: pointer;
+}
+footer .footerContainer form button:hover {
+  background-color: #000;
+  color: #fff;
+  outline: none;
+}

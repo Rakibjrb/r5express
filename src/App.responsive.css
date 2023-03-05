@@ -1,0 +1,370 @@
+/* responsive for large to 4k screen size */
+@media screen and (min-width: 1201px) {
+  .mainContainer {
+    width: 100%;
+    max-width: 1460px;
+    margin: 0 auto;
+  }
+  #banner {
+    height: auto;
+    padding-bottom: 10rem;
+  }
+}
+
+/* responsive for largr devices */
+@media screen and (max-width: 1200px) {
+  .nav2 .secondNavLinks {
+    max-width: 700px;
+  }
+  #banner {
+    width: 100%;
+    height: auto;
+    padding-bottom: 4rem;
+  }
+  #stock {
+    padding: 80px 1rem;
+  }
+  #stock .leftDiv {
+    margin: 0 2rem 50px 1rem;
+  }
+  .cartGrid {
+    grid-template-columns: auto auto;
+    grid-gap: 2rem;
+  }
+  footer .footerContainer {
+    max-width: 912px;
+  }
+  .rightDiv2 .pay_icons i {
+    margin-left: 1rem;
+    font-size: 2.4rem;
+  }
+  .cart .cartProducts img {
+    width: 200px;
+    height: 100px;
+    margin: 0 1rem;
+  }
+  .registerMaindiv {
+    width: 100%;
+    height: 75vh;
+  }
+  .userCartMainDiv {
+    height: 75vh;
+  }
+  .userCartMainDiv .userCart {
+    width: 300px;
+    height: auto;
+    padding: 2rem;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* responsive for small devices */
+@media screen and (max-width: 820px) {
+  /* for mobile btn */
+  #btn2 {
+    display: none;
+  }
+  .mobileBtn {
+    position: absolute;
+    top: 15px;
+    right: 5px;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    background: #000;
+    color: #fff;
+    border: 1px solid #fff;
+    outline: none;
+    z-index: 999;
+  }
+  /*top navbar*/
+  .nav1 {
+    display: none;
+  }
+  nav .navLink {
+    margin: 1rem;
+    font-size: 16px;
+  }
+  .nav2 {
+    text-align: center;
+    background-color: #197788;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0.4rem 0;
+  }
+  .nav2 .secondNavLinks {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav2 .secondNavLinks .secondNavLink {
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  #banner {
+    margin-top: 66px;
+    height: auto;
+  }
+  #banner h1 {
+    text-align: center;
+    font-size: 3rem;
+    padding: 4rem 0;
+  }
+  #banner .bannerdivrow {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+  }
+  #banner .bannerdivrow .bannerdivcol {
+    width: 24.5rem;
+    padding: 2rem 0;
+    margin: 2rem 0;
+  }
+  #stock {
+    padding: 80px 2rem;
+    display: flex;
+    flex-direction: column;
+  }
+  #stock .leftDiv {
+    margin: 0 0 50px 6rem;
+  }
+  #stock .rightDivMain .productSearch {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto 2rem auto;
+  }
+  #stock .rightDivMain .productSearch .shortBy select {
+    padding: 5px 0;
+    width: 78.5%;
+    text-align: center;
+    margin-left: 14px;
+  }
+  #stock .rightDivMain .productSearch .searchForm form input {
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .cartGrid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2rem;
+    width: 88%;
+    margin: 0 auto;
+  }
+  footer .footerContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+  }
+  footer .footerContainer p {
+    margin-bottom: 16px;
+  }
+  footer .footerContainer form label,
+  footer .footerContainer p {
+    font-size: 17px;
+  }
+  .registerMaindiv {
+    width: 100%;
+    height: 100vh;
+  }
+  .userCartMainDiv {
+    height: 86vh;
+  }
+  .userCartMainDiv .userCart {
+    width: 300px;
+    height: auto;
+    padding: 2rem;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .cart {
+    display: flex;
+    flex-direction: column;
+  }
+  .cart .leftDiv {
+    padding: 4rem 0;
+    width: 86%;
+    margin: 0 auto;
+  }
+  .rightDiv {
+    width: 82%;
+    margin: 0 0 0 8%;
+  }
+}
+
+/* responsive for small devices */
+@media screen and (max-width: 600px) {
+  /* for mobile btn */
+  .mobileBtn {
+    width: 40px;
+    height: 40px;
+  }
+  #banner .bannerdivrow {
+    width: 66%;
+  }
+  #stock .leftDiv {
+    margin: 0 0 50px 4rem;
+  }
+  #stock .rightDivMain .productSearch {
+    width: 76%;
+  }
+  #stock .rightDivMain .productSearch .shortBy select {
+    padding: 5px 4.8rem;
+    width: 96%;
+  }
+  .cartGrid {
+    grid-template-columns: auto;
+    width: 64%;
+  }
+  footer .footerContainer {
+    padding: 2rem 0;
+  }
+  .userCartMainDiv {
+    height: 82vh;
+  }
+  .userCartMainDiv .userCart {
+    width: 300px;
+    height: auto;
+    padding: 2rem;
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .cart .leftDiv {
+    width: 100%;
+    margin: 0 0 0 2%;
+  }
+  .rightDiv {
+    width: 96%;
+    margin: 0 0 0 2%;
+  }
+  .cart .cartProducts img {
+    width: 200px;
+    margin: 0 1rem;
+  }
+}
+
+/* responsive for mobile devices */
+@media screen and (max-width: 450px) {
+  #banner h1 {
+    font-size: 2rem;
+  }
+  #banner .bannerdivrow {
+    width: 100%;
+    max-width: 68%;
+  }
+  #banner .bannerdivrow .bannerdivcol {
+    width: 17rem;
+  }
+  #stock .leftDiv {
+    margin: 0 0 50px 3.5rem;
+  }
+  #stock .rightDivMain .productSearch {
+    margin-bottom: 2rem;
+  }
+  #stock .rightDivMain .productSearch .shortBy select {
+    padding: 5px 0rem;
+  }
+  .cartGrid {
+    grid-template-columns: auto;
+    width: 90%;
+  }
+  footer .footerContainer form {
+    display: flex;
+    flex-direction: column;
+  }
+  footer .footerContainer form input {
+    margin: 1rem 0;
+  }
+  footer .footerContainer form button {
+    width: 50%;
+    margin: 0 auto;
+  }
+  footer .footerContainer form label,
+  footer .footerContainer p {
+    font-size: 15px;
+  }
+  .registerMaindiv {
+    height: 75vh;
+  }
+  .registerPage {
+    width: 360px;
+    position: relative;
+    top: 56%;
+    left: 50%;
+  }
+  .userCartMainDiv .userCart {
+    width: 300px;
+    height: auto;
+    padding: 2rem;
+    position: absolute;
+    top: 44%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .cart .leftDiv {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .cart .leftDiv .ldiv1 h3 {
+    font-size: 1.4rem;
+  }
+  .cart .leftDiv .ldiv1 {
+    width: 100%;
+  }
+  .cart .leftDiv .ldiv1 div {
+    display: grid;
+    grid-template-columns: auto;
+    width: 42%;
+    margin: 0 auto;
+  }
+  .cart .leftDiv .ldiv1 div div {
+    width: 100%;
+  }
+  .cart .leftDiv .ldiv1 div div label {
+    margin-top: 10px;
+  }
+  .cart .leftDiv .ldiv1 div .delBtn {
+    margin: 1rem 0;
+    padding: 0.5rem;
+  }
+  .cart .cartProducts {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-gap: 1rem;
+  }
+  .cart .cartProducts img {
+    width: 280px;
+    height: 170px;
+  }
+  .cart .cartProducts div {
+    text-align: center;
+  }
+  .cart .cartProducts div h4 {
+    font-size: 20px;
+  }
+  .cart .cartProducts .delBtn {
+    margin: 0 0 2rem 0;
+  }
+  .cart .cartProducts .quantity {
+    width: 30%;
+    margin: 0 auto;
+  }
+  .rightDiv {
+    width: 97%;
+    height: auto;
+  }
+}
