@@ -19,29 +19,23 @@ const Stock = () => {
     }
   };
 
+  const shortCodeForPriceRange = (lowRange, prices) => {
+    const shortPriceProduct = filterCartsD.filter(
+      (short) => short.price > lowRange && short.price <= prices
+    );
+    setFilterCarts(shortPriceProduct);
+  };
+
   const shortCurtPrice = (price) => {
     const prices = Number(price);
-    console.log(prices);
     if (prices <= 20) {
-      const shortPriceProduct = filterCartsD.filter(
-        (short) => short.price > 0 && short.price <= prices
-      );
-      setFilterCarts(shortPriceProduct);
+      shortCodeForPriceRange(0, prices);
     } else if (prices <= 50) {
-      const shortPriceProduct = filterCartsD.filter(
-        (short) => short.price > 20 && short.price <= prices
-      );
-      setFilterCarts(shortPriceProduct);
+      shortCodeForPriceRange(20, prices);
     } else if (prices <= 100) {
-      const shortPriceProduct = filterCartsD.filter(
-        (short) => short.price > 50 && short.price <= prices
-      );
-      setFilterCarts(shortPriceProduct);
+      shortCodeForPriceRange(50, prices);
     } else if (prices <= 500) {
-      const shortPriceProduct = filterCartsD.filter(
-        (short) => short.price > 100 && short.price <= prices
-      );
-      setFilterCarts(shortPriceProduct);
+      shortCodeForPriceRange(100, prices);
     } else {
       const shortPriceProduct = filterCartsD.filter(
         (short) => short.price >= prices

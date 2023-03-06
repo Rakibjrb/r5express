@@ -57,18 +57,6 @@ const ShortCurt = (props) => {
       ),
     },
     {
-      id: 22,
-      name: "Telephone",
-      checkbox: (
-        <input
-          type="radio"
-          onChange={handleChangeForName}
-          name="forShortCurt"
-          value="mobile"
-        />
-      ),
-    },
-    {
       id: 33,
       name: "Television",
       checkbox: (
