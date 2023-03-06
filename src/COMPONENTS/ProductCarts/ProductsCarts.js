@@ -25,7 +25,7 @@ const ProductsCarts = (props) => {
           <img src={image} alt="ProductPicture" />
           <h3>{productName}</h3>
           <p>{productDescription}...</p>
-          <h5>Price : {price}</h5>
+          <h5>Price : {price}$</h5>
           <h5>Rating : {rating}</h5>
           <h5 style={{ color: "red" }}>Shipping : {shipping.toUpperCase()}</h5>
         </div>
