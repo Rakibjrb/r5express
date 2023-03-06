@@ -24,7 +24,7 @@ const Banner = () => {
       <section id="banner">
         {/*eslint-disable-next-line*/}
         <marquee>
-          <h1>50% Sales going on shop now and save money</h1>
+          <h1>50% Sales going on shop and save your money</h1>
         </marquee>
         <div className="bannerdivrow container2">
           {bannerFeatureData.map((feature) => {
